@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이든웹진 - 2026년 5월 24일</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            background-color: #f1f5f9;
+            color: #334155;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            background: linear-gradient(135deg, #4b5563 0%, #374151 50%, #1f2937 100%);
+            color: #ffffff;
+            padding: 50px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .header p {
+            margin: 12px 0 0;
+            color: #e5e7eb;
+            font-size: 16.5px;
+            font-weight: 500;
+        }
+        .d-day-badges {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .intro {
+            padding: 40px 35px;
+            font-size: 17px;
+            color: #475569;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+            word-break: keep-all;
+            line-height: 1.7;
+            background-color: #f8fafc;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 40px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 35px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+        }
+        .section:nth-child(1)::before { background-color: #3b82f6; } 
+        .section:nth-child(2)::before { background-color: #10b981; } 
+        .section:nth-child(3)::before { background-color: #f59e0b; } 
+        .section:nth-child(4)::before { background-color: #6366f1; } 
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 0;
+            margin-bottom: 20px;
+            word-break: keep-all;
+            line-height: 1.4;
+        }
+        .section-text {
+            font-size: 16.5px;
+            color: #475569;
+            margin-bottom: 25px;
+            word-break: keep-all;
+            line-height: 1.7;
+        }
+        .quote-box {
+            background: #f1f5f9;
+            border-radius: 10px;
+            padding: 20px 25px;
+            border-left: 4px solid #94a3b8;
+        }
+        .quote-en {
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #64748b;
+        }
+        .quote-ko {
+            font-size: 15.5px;
+            font-weight: 600;
+            color: #334155;
+        }
+        .quote-author {
+            display: block;
+            margin-top: 12px;
+            font-size: 13.5px;
+            color: #94a3b8;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #4338ca;
+            background-color: #e0e7ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .footer {
+            background: #f8fafc;
+            padding: 45px 30px;
+            text-align: center;
+            color: #64748b;
+            font-size: 14.5px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer strong {
+            color: #1e293b;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+        .footer .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .footer .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .footer p {
+            margin: 0;
+            line-height: 1.6;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>이든웹진</h1>
+        <p>2026년 5월 24일 일요일, 비 예보가 있는 차분한 아침입니다.</p>
+        <div class="d-day-badges">
+            <span class="badge">수능 D-179</span>
+            <span class="badge">1학기 기말고사 D-32</span>
+        </div>
+    </header>
+
+    <div class="intro">
+        하늘이 약간 찌푸린 일요일 아침입니다. 달콤한 주말의 늦잠마저 반납하고 스스로와의 약속을 지키기 위해 무거운 몸을 이끌어 책상 앞을 지키는 수험생 여러분, 그리고 그 곁에서 무한한 지지를 보내주시는 학부모님들께 깊은 존경을 표합니다.<br><br>
+        모두가 쉬어가는 휴일에 내딛는 이 묵묵하고 우직한 한 걸음은, 가장 단단하고 빛나는 내일을 만드는 훌륭한 자양분이 될 것입니다. 이든웹진이 비 내리는 주말 속에서도 꿋꿋하게 앞을 향해 나아가는 여러분께 따뜻한 위로와 명쾌한 길잡이가 되기를 바랍니다.
+    </div>
+
+    <main class="content">
+        <!-- Section 1 -->
+        <article class="section">
+            <h2 class="section-title">일요일의 늦잠을 반납한 당신의 결단이, 가장 달콤한 결실을 맺습니다.</h2>
+            <div class="section-text">
+                마음마저 가라앉는 흐린 휴일 아침에는 유독 학원 문을 두드리기가 힘겹게 느껴질 수 있습니다. 며칠 전 잠시 쉬어갔다는 자책감이나 막연한 불안감이 발목을 붙잡는다면, 그 짐을 훌훌 털어버리시길 바랍니다. 때론 넘어지고 흔들릴지라도, 다시 책상 앞에 앉으려는 용기 하나면 충분합니다. 멈췄던 걸음을 다시 내디딜 수 있도록, 이든은 늘 변함없는 온기로 여러분의 새로운 시작을 돕고 기다리겠습니다.
+            </div>
+            <div class="quote-box">
+                <div class="quote-en">"Don't judge each day by the harvest you reap but by the seeds that you plant."</div>
+                <div class="quote-ko">하루하루를 네가 거둔 수확물로 판단하지 말고, 네가 심은 씨앗으로 판단하라.</div>
+                <span class="quote-author">- Robert Louis Stevenson (로버트 루이스 스티븐슨)</span>
+            </div>
+        </article>
+
+        <!-- Section 2 -->
+        <article class="section">
+            <h2 class="section-title">어느덧 수능 레이스의 절반, 그리고 눈앞으로 다가온 기말고사라는 징검다리.</h2>
+            <div class="section-text">
+                수능을 향한 365일이라는 기나긴 여정 중, 어느덧 절반의 시간이 지났습니다. 반환점을 돈 지금은 재학생들에게 기말고사라는 또 다른 중요한 관문이 약 한 달 앞으로 다가온 결정적 시기이기도 합니다. 남들이 휴일의 여유를 즐길 때 조용히 책을 펼치는 N수생 여러분의 절실함과, 내신과 수능이라는 두 마리 토끼를 잡기 위해 고군분투하는 재학생 여러분의 치열함은 곧 가장 찬란한 성취로 돌아올 것입니다. 스스로의 잠재력을 믿고 거침없이 돌파하십시오.
+            </div>
+            <div class="quote-box">
+                <div class="quote-en">"It does not matter how slowly you go as long as you do not stop."</div>
+                <div class="quote-ko">멈추지 않는 이상 얼마나 천천히 가는지는 중요하지 않다.</div>
+                <span class="quote-author">- Confucius (공자)</span>
+            </div>
+        </article>
+
+        <!-- Section 3 -->
+        <article class="section">
+            <h2 class="section-title">불안과 막막함 속에 견뎌낸 시간은 당신을 더욱 눈부시게 세공합니다.</h2>
+            <div class="section-text">
+                먹구름 낀 하늘처럼 덩달아 미래가 불투명하게 느껴지고, 마음이 소란스러워 홀로 눈물 삼키는 순간이 찾아오곤 합니다. 그럴 땐 앞서가는 남들과 자신을 비교하며 깎아내리기보다, 이 무거운 감정들을 견뎌내며 오늘을 살아낸 자신을 따뜻하게 감싸 안아주세요. 불안함은 꿈을 향한 열정의 그림자일 뿐입니다. 비바람을 맞으며 버텨내는 이 시간 속에서 여러분의 내면은 누구보다 단단하고 아름답게 세공되고 있습니다.
+            </div>
+            <div class="quote-box">
+                <div class="quote-en">"The gem cannot be polished without friction, nor man perfected without trials."</div>
+                <div class="quote-ko">보석은 마찰 없이 빛날 수 없고, 사람은 시련 없이 완벽해질 수 없다.</div>
+                <span class="quote-author">- Chinese Proverb (중국 속담)</span>
+            </div>
+        </article>
+
+        <!-- Section 4 -->
+        <article class="section">
+            <h2 class="section-title">거대한 목표를 정복하는 가장 지혜로운 조각, '마이크로러닝'</h2>
+            <div class="section-text">
+                기말고사와 수능 대비를 위해 쌓여가는 방대하고 복잡한 학습량에 압도당할 때면, <span class="highlight">마이크로러닝(Microlearning)</span> 전략을 활용해 보십시오. 이는 산더미 같은 범위를 한 번에 소화하려 하지 않고, 몇 분 이내에 완수할 수 있는 짧고 집중적인 단위로 잘게 쪼개어 학습하는 기법입니다.<br><br>
+                지식을 소화하기 쉬운 형태로 분할하여 제공하므로, 심리적 진입 장벽과 거부감이 획기적으로 낮아집니다. 자투리 시간을 활용한 짧은 몰입은 뇌의 피로도를 줄여줄 뿐만 아니라, 흡수된 지식의 유지율을 최대 95%까지 향상시키는 강력한 효과를 냅니다. 부담스러운 목표일수록 가장 작은 단위로 나누어 하나씩 격파해 나가십시오.
+            </div>
+            <div class="quote-box">
+                <div class="quote-en">"Great things are done by a series of small things brought together."</div>
+                <div class="quote-ko">위대한 일은 작은 일들이 모여 이루어진다.</div>
+                <span class="quote-author">- Vincent Van Gogh (빈센트 반 고흐)</span>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <strong>이든관리형학습센터 엠베스트SE 미사이든학원 황붕주 원장 드림</strong>
+        <div class="contact-info">
+            <span>📍 미사강변대로 80 그린프라자 7층</span>
+            <span>📞 010-8442-2817</span>
+        </div>
+        <p>
+            수험 생활이라는 고독하고 긴 마라톤, 여러분은 결코 혼자가 아닙니다.<br>
+            이든이 여러분의 든든한 조력자가 되어 목표에 닿는 그날까지 끝까지 곁을 지키겠습니다.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
